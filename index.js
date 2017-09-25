@@ -36,4 +36,7 @@ function message(message) {
 
 client.login(config.discord_token);
 client.on('message', message);
-client.on('ready', () => console.log('Logged in as ' + client.user.tag));
+client.on('ready', () => {
+  console.log('Logged in as ' + client.user.tag);
+  client.user.setGame('+npm <package>');
+});
