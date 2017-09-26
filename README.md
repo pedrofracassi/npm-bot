@@ -7,7 +7,13 @@ git clone https://github.com/pedrofracassi/npm-bot.git
 cd npm-bot
 npm install
 ```
-At this point, you will need to stop and add your bot token in `config.json`. After adding it, all that's left to do is:
+At this point, you will need to stop and create a file named `config.json`. It should contain you discord token:
+```json
+{
+  "discord_token": "YOUR_TOKEN_GOES_HERE"
+}
+```
+After saving the file, all you need to do is:
 ```bash
 node index.js
 ```
