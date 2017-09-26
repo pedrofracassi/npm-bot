@@ -15,7 +15,7 @@ function message(message) {
         embed.setDescription(`**Usage:** \`+npm <package name>\`\n\nIf you're having trouble with the bot, please open an [issue](https://github.com/pedrofracassi/npm-bot/issues)`);
         message.channel.send({embed});
       } else if (packagename == '--invite') {
-        embed.setDescription(`[Invite me to your server by clicking this link](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot)\n\nI'm also open source, you can check my source code [here](https://github.com/pedrofracassi/npm-bot)`)
+        embed.setDescription(`[Invite me to your server by clicking this link](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot)\n\nI'm open source. Check my code [here](https://github.com/pedrofracassi/npm-bot)`)
         message.channel.send({embed});
       } else {
         message.channel.startTyping();
